@@ -1,5 +1,6 @@
-import styled from "styled-components/native";
-import theme from "../../../styles/theme";
+import { RFValue } from 'react-native-responsive-fontsize';
+import styled from 'styled-components/native';
+import theme from '../../../styles/theme';
 
 export const Container = styled.View`
   flex: 1;
@@ -26,17 +27,23 @@ export const TextContent = styled.View`
   justify-content: center;
 `;
 
-export const UserImage = styled.View`
-  width: 40px;
-  height: 40px;
-  background-color: ${theme.success};
+export const UserImage = styled.Image`
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
 `;
 
 export const GreetingText = styled.Text`
   margin-left: 15px;
+  font-size: ${RFValue(14)}px;
+  font-family: ${theme.fonts.title_semibold};
 `;
 
-export const UserName = styled.Text``;
+export const UserName = styled.Text`
+  font-size: ${RFValue(14)}px;
+  font-family: ${theme.fonts.title_semibold};
+  color: ${theme.primary};
+`;
 
 export const ScheduleContent = styled.ScrollView.attrs({
   showsVerticalScrollIndicator: false,
@@ -48,7 +55,11 @@ export const NextSchedules = styled.View`
   padding: 20px 10px;
 `;
 
-export const Title = styled.Text``;
+export const Title = styled.Text`
+  font-size: ${RFValue(14)}px;
+  font-family: ${theme.fonts.title_bold};
+  color: ${theme.textBody};
+`;
 
 export const NextSchedulesList = styled.View`
   width: 100%;

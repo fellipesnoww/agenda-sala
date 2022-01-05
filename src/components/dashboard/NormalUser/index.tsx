@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 import {
   Container,
@@ -12,7 +12,7 @@ import {
   Title,
   UserImage,
   UserName,
-} from "./styles";
+} from './styles';
 
 export default function NormalUser() {
   return (
@@ -20,11 +20,19 @@ export default function NormalUser() {
       <Greeting>
         <GreetingContent>
           <TextContent>
-            <UserImage />
+            <UserImage
+              source={{
+                uri: 'https://avatars.githubusercontent.com/u/48105194?v=4',
+              }}
+            />
             <GreetingText>Olá, </GreetingText>
             <UserName>Fellipe</UserName>
           </TextContent>
-          <UserImage />
+          <UserImage
+            source={{
+              uri: 'https://avatars.githubusercontent.com/u/48105194?v=4',
+            }}
+          />
         </GreetingContent>
       </Greeting>
       <ScheduleContent>
